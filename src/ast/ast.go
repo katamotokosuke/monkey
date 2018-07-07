@@ -41,3 +41,6 @@ func (p *Program) TokenLiteral() string {
 
 func (ls *LetStatement) statementNode() {}
 func (ls *LetStatement) TokenLiteral() string { return ls.Token.Literal }
+
+func (i *Identifier) expressionNode() {}
+func (i *Identifier) TokenLiteral() string { return i.Token.Literal }
